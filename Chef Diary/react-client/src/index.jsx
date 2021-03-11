@@ -1,36 +1,25 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import $ from 'jquery';
-import List from './components/List.jsx';
+// import Recipe from './components/Recipe.jsx'
+// import RecipeList from './components/RecipeList.jsx'
+// import AddRecipe from './components/AddRecipe.jsx'
+// import Home from './components/Home.jsx'
+import About from './components/About.jsx'
 
 class App extends React.Component {
-  constructor(props) {
+  constructor(props){
     super(props);
-    this.state = { 
-      items: []
+    this.state ={
     }
   }
+render(){
+return(
+<div>
 
-  componentDidMount() {
-    $.ajax({
-      url: '/items', 
-      success: (data) => {
-        this.setState({
-          items: data
-        })
-      },
-      error: (err) => {
-        console.log('err', err);
-      }
-    });
-  }
+</div>
+)
+}}
 
-  render () {
-    return (<div>
-      <h1>Item List</h1>
-      <List items={this.state.items}/>
-    </div>)
-  }
-}
+
 
 ReactDOM.render(<App />, document.getElementById('app'));
