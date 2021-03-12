@@ -10,8 +10,10 @@ class AddRecipe extends React.Component {
         }
     render() {
         return (
-            <div>
-                
+            <div id='add'>
+                <input placeholder="title"></input>
+                <input placeholder="image"></input>
+                <input placeholder="body"></input>
             </div>
         )
     }

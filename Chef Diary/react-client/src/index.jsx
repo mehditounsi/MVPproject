@@ -33,7 +33,7 @@ renderView() {
   if (this.state.view === 'recipeList') {
     return <RecipeList data={this.state.data} handleClick={(id) => this.changeView('anyview',id)}/>
   } else {
-    return <Recipe data={this.state.data.filter(element=>element.id === this.state.index)[0]}/>
+    return <AddRecipe/>
   }
 }
 render(){
@@ -47,10 +47,8 @@ render(){
           <span 
             onClick={() => this.changeView('recipeList')}>
             Recipe
-          </span>
-          <span >
-            Post
-          </span>
+          </span >
+          <span onClick={() => this.changeView('add')} > Post </span>
           <span >
             About us
           </span>
@@ -64,6 +62,6 @@ render(){
 
 </div>)
 }
- }
+}
 
-ReactDOM.render(<App />, document.getElementById('app'))
+ReactDOM.render(<App/>, document.getElementById('app'))
