@@ -37,20 +37,6 @@ Next, add greens to empty clean sink and wash them removing all grit, sand and d
 Next rinse the ham hock very well then add to a large pot along with enough water to fully submerge the ham hock then cover with a lid. Cook over medium high heat for about 45 minutes or until ham hock is near being tender.
 Once ham hock is almost tender, add greens and about 4-5 additional cups of water or enough to just barely cover greens to the pot. This will become your pot likker.
 Add along the rest of the ingredients to the pot and cook while covered for at least 2 hours or until completely tender. Most water should have evaporated by this point just having enough to barely cover the greens.")
-INSERT INTO recipes (title,imageUrl,body) values ("Sausage Gravy","https://az810478.vo.msecnd.net/media/images/default-source/Recipes/sausage/biscuits-with-green-chile-sausage-gravy.jpg","You won’t get far on a Southern breakfast table without gravy! Hearty and robust, gravy has a way of soothing the soul and filling the belly like no other. Buttermilk Kitchen’s Sawmill Gravy is smoky, peppery and unique; it’s become my go-to recipe and will continue to be for years to come.
-
-Here’s what you’ll need to make gravy gold:
-
-Minced Onion & Garlic– both add depth, aroma and a slight sweetness. Because this gravy is quite thick and chunky, there’s no need to worry about mincing super finely.
-Unsalted Butter– it’s imported to use unsalted butter in this recipe. Using salted butter will only add unwanted sodium and make for a salty gravy.
-Red Chili Flakes– don’t have any on hand? Try using a couple dashes of cayenne instead. Not a fan of heat? Use a bit of sweet paprika.
-Ground Pork Country Sausage– I highly recommend investing in freshly ground, high-quality sausage. Meat is the shining star in this gravy, so the quality of the pork will really determine the outcome.
-Chicken Stock– stock adds body to the gravy without being too rich or overwhelming. Vegetable stock will work as well.
-Heavy Cream– cream adds smooth, sweet richness. *mouth watering*
-All-Purpose Flour– flour works as a thickener here. I wouldn’t suggest using anything other than all-purpose.
-Ground Nutmeg– if possible, grate the nutmeg yourself. It’s worth it.
-Tabasco– no tabasco on hand? Use your favorite hot sauce. Just a few dashes adds a great kick!
-Kosher Salt & Fresh Cracked Pepper– there’s no other option for salt and pepper. Trust me.")
 INSERT INTO recipes (title,imageUrl,body) values ("Homemade French Fries","https://food.fnr.sndimg.com/content/dam/images/food/fullset/2012/9/5/1/WU0306H_perfect-french-fries_s4x3.jpg.rend.hgtvcom.826.620.suffix/1589465976850.jpeg","HOW TO MAKE CRISPY SWEET POTATO FRIES
 Garlic Butter Sweet Potato Fries have been a favorite of mine since I first shared this recipe almost 6 years ago. Spiced, garlicky and salty-sweet, these fries make for the absolute best side or snack! But, because they’re baked rather than fried, they’re not always as crispy as I prefer my fries to be.
 

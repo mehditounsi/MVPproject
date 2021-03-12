@@ -19,7 +19,8 @@ app.get('/recipes', function (req, res) {
 });
 
 app.post('/recipes',function(req,res){
-  db.postRecipe([req.body.title,req.body.imageUrl,req.body.body],(err,data)=>{
+  console.log("body",req.body)
+  db.postRecipe([req.body.title,req.body.image,req.body.body],(err,data)=>{
     err ? res.sendStatus(400) : res.json(data)
   })
 })

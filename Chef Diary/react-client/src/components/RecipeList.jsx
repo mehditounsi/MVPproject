@@ -2,21 +2,16 @@ import React from 'react'
 
 
 class RecipeList extends React.Component {
-    constructor(props){
-        super(props);
-        this.state={
-    
-        }
-      }
       
     render (props) { 
       return(
-      <div className='recipeList' >
+      <div className='recipeList'>
        <ul>
       {this.props.data.map((element,key)=>
         <li  key={key}>
-        <div onClick={()=>this.props.handleClick(element.id)}>{element.title}</div>
-        <img src={element.imageUrl} onClick={()=>this.props.handleClick(element.id)}/>
+        <div onClick={()=>{this.props.handleClick("recipe",element)}}>{element.title}</div>
+        <img src={element.imageUrl}
+        onClick={()=>{this.props.handleClick("recipe",element)}}/>
         <span>{element.body.slice(0,element.body.indexOf('.'))+" ..."}</span>
       </li>
       )}
