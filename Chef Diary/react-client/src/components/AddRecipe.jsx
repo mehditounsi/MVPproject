@@ -37,11 +37,11 @@ postRecipe(){
 
     render() {
         return (
-            <div id='add'>
-                <input value={this.state.title} onChange={this.handleChange} id="title" placeholder="title"></input>
-                <input value={this.state.image} onChange={this.handleChange} id="image" placeholder="image"></input>
-                <input value={this.state.body} onChange={this.handleChange} id="body" placeholder="body"></input>
-                <button onClick={this.postRecipe}>Post Recipe</button>
+            <div id='add' className="create" >
+                <input className="create-input" value={this.state.title} onChange={this.handleChange} id="title" placeholder="title"></input>
+                <input className="create-input" value={this.state.image} onChange={this.handleChange} id="image" placeholder="image" ></input>
+                <textarea className="create-body-textarea" value={this.state.body} onChange={this.handleChange} id="body" placeholder="body"></textarea>
+                <button className="create-submit-button"  onClick={this.postRecipe}>Post Recipe</button>
             </div>
         )
     }

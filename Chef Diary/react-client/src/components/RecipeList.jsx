@@ -5,14 +5,14 @@ class RecipeList extends React.Component {
       
     render (props) { 
       return(
-      <div className='recipeList'>
+      <div className='recipeList' >
        <ul>
       {this.props.data.map((element,key)=>
-        <li  key={key}>
-        <div onClick={()=>{this.props.handleClick("recipe",element)}}>{element.title}</div>
-        <img src={element.imageUrl}
+        <li className="feed-list-item"  key={key}>
+        <div className="feed-list-item-title" onClick={()=>{this.props.handleClick("recipe",element)}}>{element.title}</div>
+        <img className="feed-list-item-image" src={element.imageUrl}
         onClick={()=>{this.props.handleClick("recipe",element)}}/>
-        <span>{element.body.slice(0,element.body.indexOf('.'))+" ..."}</span>
+        <span className="feed-list-item-lede" >{element.body.slice(0,element.body.indexOf('.'))+" ..."}</span>
       </li>
       )}
     </ul>

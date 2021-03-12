@@ -14,6 +14,7 @@ class App extends React.Component {
     recipe :{}
     }
     this.changeView=this.changeView.bind(this)
+    this.removeRecipe=this.removeRecipe.bind(this)
   }
 
   componentDidMount(){
@@ -30,11 +31,20 @@ changeView(view,recipe){
   })
 
 }
+removeRecipe(){
+  axios.delete(`/recipes/${this.state.recipe}`)
+  .then(response=>{
+      console.log(response)
+  })
+  .catch(err=>{
+      throw err
+  })
+}
 renderView() {
   if (this.state.view === 'recipeList') {
     return <RecipeList data={this.state.data} handleClick={this.changeView}/>
   }else if(this.state.view === 'recipe') {
-  return <Recipe recipe={this.state.recipe}/>
+  return <Recipe recipe={this.state.recipe} remove={this.removeRecipe}/>
   } else if(this.state.view==='about'){
     return <About/>
   }
@@ -45,23 +55,25 @@ renderView() {
 render(){
     return(
 <div>
-<div>
-          <span 
+<div className="nav" >
+          <span className="logo"
             onClick={() => this.changeView('recipeList')}>
             Chef Diary
           </span>
-          <span 
+          <span className={this.state.view === 'recipeList'
+            ? 'nav-selected'
+            : 'nav-unselected'}
             onClick={() => this.changeView('recipeList')}>
             Recipe
           </span >
-          <span onClick={() => this.changeView('add')} > Post </span>
+          <span className="nav-unselected" onClick={() => this.changeView('add')} > Post </span>
 
-          <span onClick={()=> this.changeView('about')} >
+          <span className="nav-unselected" onClick={()=> this.changeView('about')} >
             About us
           </span>
         </div>
 
-        <div >
+        <div className="main" >
           {this.renderView()}
         </div>
 
