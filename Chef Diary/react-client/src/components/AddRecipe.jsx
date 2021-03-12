@@ -15,6 +15,7 @@ class AddRecipe extends React.Component {
             this.postRecipe=this.postRecipe.bind(this)
         }
 handleChange(e){
+  
     this.setState({
         [e.target.id]: e.target.value
     })
@@ -22,12 +23,12 @@ handleChange(e){
 }
 
 
-postRecipe(){
-    console.log('add',this.state)
+postRecipe(e){
+    e.preventDefault()
     axios.post("/recipes",this.state)
     
     .then((response)=>{
-        console.log(response)
+       this.props.add(response.data)
     })
     .catch((err)=>{
         console.log(err)

@@ -3,24 +3,24 @@
 body {
   font-family: 'PT Serif', sans-serif;
   margin: 0px;
-  color: #2C3E50;
-  background-color: #ECF0F1;
+  color: #266150;
+  background-color: #DDAF94;
   font-size: 1.1em;
 }
 
 h2 {
-  color: #2C3E50;
+  color: #266150;
 }
 
 .feed-list-item {
   min-height: 350px;
   margin: 40px;
   list-style: none;
-  border: 1px solid #77777769;
-  background-color: #fdfdfd;
+  border: 1px solid #266150;
+  background-color: #FDF8F5;
   border-radius: 4px;
   padding: 30px 50px 0px 50px;
-  box-shadow: 0 0 1em #80808066;
+  box-shadow: 0 0 1em #266150;
 }
 
 .feed-list-item-image {
@@ -45,7 +45,7 @@ h2 {
 .feed-list-item-byline {
   font-size: .8em;
   margin-bottom: 15px;
-  color: #777777;
+  color: #DDAF94;
 }
 
 .feed-list-item-byline-author {
@@ -58,7 +58,7 @@ button {
   border-radius: 3px;
   font-family: 'PT Serif', sans-serif;
   color: #ECF0F1;
-  background-color: #E74C3C;
+  background-color: #266150;
 }
 
 .recipe {
@@ -67,7 +67,7 @@ button {
   max-width: 800px;
   font-size: 1.3em;
   line-height: 1.5em;
-  background-color: white;
+  background-color: #DDAF94;
   padding: 5px 20px 5px 20px;
 }
 
@@ -81,7 +81,7 @@ button {
 }
 
 .post-byline {
-  color: #777777;
+  color: #DDAF94;
   font-size: .8em;
   margin-bottom: 5%;
 }
@@ -91,7 +91,7 @@ button {
 }
 
 .create h2 {
-  border-bottom: 1px solid #777777;
+  border-bottom: 1px solid #266150;
   width: 90%;
   font-family: 'Francois One';
 }
@@ -153,7 +153,7 @@ button {
 .comment-entry {
   margin-top: 5px;
   padding: 10px;
-  border: 1px solid #3498DB;
+  border: 1px solid #4F4846;
   list-style: none;
   width: 70%;
   font-size: .9em;
@@ -165,7 +165,7 @@ button {
 
 .post-list-entry {
   list-style: none;
-  border: 1px solid #3498DB;
+  border: 1px solid #266150;
   margin-bottom: 20px;
   padding: 10px;
   width: 75%;
@@ -207,7 +207,7 @@ button {
   margin-right: auto;
   margin-left: 10px;
   font-family: 'Francois One';
-  color: #ffffff;
+  color: #4F4846;
 }
 
 .main {
@@ -216,7 +216,7 @@ button {
 }
 
 .nav {
-  background-color: #3498DB;
+  background-color: #FDF8F5;
   margin: 0px;
   padding: 10px;
   display: flex;
@@ -227,7 +227,7 @@ button {
 
 .nav-selected {
   padding: 5px;
-  color: white;
+  color: #4F4846;
   font-weight: bold;
   margin-right: 5px;
   font-size: 1.1em;

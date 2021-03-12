@@ -15,6 +15,12 @@ class App extends React.Component {
     }
     this.changeView=this.changeView.bind(this)
     this.removeRecipe=this.removeRecipe.bind(this)
+    this.updateRecipes=this.updateRecipes.bind(this)
+  }
+  updateRecipes(recipe){
+    var old = this.state.data
+    old.unshift(recipe);
+    this.setState({data: old})
   }
 
   componentDidMount(){
@@ -32,7 +38,7 @@ changeView(view,recipe){
 
 }
 removeRecipe(){
-  axios.delete(`/recipes/${this.state.recipe}`)
+  axios.delete(`/recipes/${this.state.data}`)
   .then(response=>{
       console.log(response)
   })
@@ -49,7 +55,7 @@ renderView() {
     return <About/>
   }
   else {
-    return <AddRecipe/>
+    return <AddRecipe add={this.updateRecipes} />
   }
 }
 render(){

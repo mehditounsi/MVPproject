@@ -9,7 +9,7 @@ class About extends React.Component {
         }
     render() {
         return (
-            <div className="about" >
+            <div className="about" className="logo" >
                 <h1>About Us</h1>
                 <h4>
                     Chef Diary is a website developed by Mehdi Tounsi a junior developer ,
