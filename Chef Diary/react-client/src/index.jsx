@@ -37,8 +37,8 @@ changeView(view,recipe){
   })
 
 }
-removeRecipe(){
-  axios.delete(`/recipes/${this.state.data}`)
+removeRecipe(recipe){
+  axios.delete(`/recipes/${this.state.recipe.id}`)
   .then(response=>{
       console.log(response)
   })

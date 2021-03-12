@@ -28,7 +28,7 @@ postRecipe(e){
     axios.post("/recipes",this.state)
     
     .then((response)=>{
-       this.props.add(response.data)
+        console.log(response)
     })
     .catch((err)=>{
         console.log(err)

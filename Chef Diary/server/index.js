@@ -25,8 +25,8 @@ app.post('/recipes',function(req,res){
   })
 })
 
-app.delete('/recipes/:recipeId',function(req,res){
-  db.deleteRecipe([req.params.id],(err,data)=>{
+app.delete('/recipes/:id',function(req,res){
+  db.deleteRecipe(req.params.id,(err,data)=>{
     err ? res.sendStatus(400) : res.json(data)
   })
 })

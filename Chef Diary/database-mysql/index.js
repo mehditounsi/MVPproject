@@ -14,7 +14,7 @@ err ? callback(err,null) : callback(null,results)
 }
 
 var deleteRecipe=function(params,callback){
-connection.query(`Delete FROM recipes where id=?`,[params],(err,result)=>{
+connection.query(`Delete FROM recipes where id=?`,params,(err,result)=>{
   err ? calbback(err,null) : callback(null,result)
 })
 }
